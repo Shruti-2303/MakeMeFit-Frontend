@@ -1,0 +1,150 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --primary: #224cd4;
+  --secondary: #e7195a;
+}
+body {
+  background: #f1f1f1;
+  margin: 0;
+  font-family: 'Nunito', sans-serif;
+}
+header {
+  background: #fff;
+}
+header .container {
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 5px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header a {
+  color: black;
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+#nav-login, #nav-signup{
+  font-size: 1.2rem;
+}
+.pages{
+  max-width: 80%;
+  padding: 20px;
+  margin: 0 auto;
+}
+/* homepage */
+.home {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 100px;
+}
+.workout-details {
+  background: #fff;
+  border-radius: 1rem;
+  margin: 20px auto;
+  padding: 20px;
+  position: relative;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+.workout-details h4 {
+  margin: 0 0 10px 0;
+  font-size: 1.3em;
+  color: var(--primary);
+}
+.workout-details p {
+  margin: 0;
+  font-size: 1em;
+  color: #555;
+}
+.workout-details span {
+  position: absolute;
+  top: 23px;
+  right: 20px;
+  cursor: pointer;
+  color: var(--secondary);
+}
+
+
+/* new workout form */
+label, input {
+  display: block;
+}
+input {
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+form button {
+  background: var(--primary);
+  border: 0;
+  color: #fff;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+div.error {
+  padding: 10px;
+  background: #ffefef;
+  border: 1px solid var(--secondary);
+  color: var(--secondary);
+  border-radius: 4px;
+  margin: 20px 0;
+}
+
+input.error{
+  border: 1px solid var(--secondary);
+}
+
+/* navbar */
+nav {
+  display: flex;
+  align-items: center;
+}
+nav a { 
+  margin-left: 15px;
+}
+
+nav button{
+  background: white;
+  margin-left: 0.5rem;
+  color: var(--primary);
+  border: 2px solid var(--primary);
+  border-radius: 0.2rem;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 1em;
+  font-family: 'Nunito';
+  font-weight: 500;
+  -webkit-border-radius: 0.2rem;
+  -moz-border-radius: 0.2rem;
+  -ms-border-radius: 0.2rem;
+  -o-border-radius: 0.2rem;
+}
+
+/* auth forms */
+form.signup, form.login {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  -ms-border-radius: 0.5em;
+  -o-border-radius: 0.5em;
+}
